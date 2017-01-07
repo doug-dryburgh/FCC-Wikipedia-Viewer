@@ -1,0 +1,95 @@
+ @import url('https://fonts.googleapis.com/css?family=Dosis');
+ /* discontinued
+ @keyframes bkgColor {
+     0% {
+         background-color: rgba(0, 0, 0, .9);
+     }
+     25% {
+         background-color: rgba(0, 0, 0, .9);
+     }
+     75% {
+         background-color: rgba(0, 0, 40, .9);
+     }
+     100% {
+         background-color: rgba(0, 0, 40, .9);
+     }
+ } */
+ 
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+     }
+     to {
+         opacity: 1;
+     }
+ }
+ 
+ html,
+ body {
+     height: 100%;
+ }
+ 
+ .hideDisplay {
+     display: none;
+ }
+ 
+ .showDisplay {
+     animation-name: fadeIn;
+     animation-duration: 1.5s;
+ }
+ 
+ .searchItem:hover {
+     background-color: rgba(0, 0, 0, .8);
+     border-radius: 5px;
+     transition: background-color .4s;
+ }
+ 
+ #pageContainer {
+     background-image: url(http://i.imgsafe.org/0769924f65.jpg);
+     width: 100%;
+     min-height: 100%;
+     background-size: cover;
+ }
+ 
+ .content {
+     width: 100%;
+     border-radius: 5px;
+     background-color: rgba(0, 0, 0, .8);
+ }
+ 
+ form {
+     width: 100%;
+     margin: 0 auto;
+     text-align: center;
+ }
+ 
+ input[type=search] {
+     width: 70%;
+     margin: 10px;
+     border-radius: 5px;
+ }
+ 
+ input {
+     width: 100px;
+     padding-bottom: 5px;
+ }
+ 
+ h1 {
+     color: white;
+     text-align: center;
+     font-family: 'Dosis', sans-serif;
+     font-size: 3em;
+ }
+ 
+ h3 {
+     color: white;
+     font-family: 'Dosis', sans-serif;
+     font-size: 2em;
+     font-weight: bold;
+ }
+ 
+ p {
+     color: white;
+     font-family: 'Dosis', sans-serif;
+     font-size: 1.25em;
+ }

@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title>FCC - Wikipedia Viewer</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css"> </head>
+
+<body>
+    <div id="pageContainer" class="container">
+        <div id="contentArea" class="showDisplay">
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div id="header" class="content">
+                        <h1 id="title">Wikipedia Viewer</h1> </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                    <div class="content">
+                        <form>
+                            <input id="searchBar" type="search" name="search" placeholder="Search Wikipedia..">
+                            <input type="button" value="Search" class="btn btn-default" onclick="searchWiki();">
+                            <input type="button" value="Random" class="btn btn-default" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random','_blank')"> </form>
+                    </div>
+                </div>
+            </div>
+            <div id="searchResults" class="row hideDisplay">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                    <div class="content">
+                        <h3 id="yourSearch"></h3>
+                        <div class="searchItem">
+                            <a id="result0L">
+                                <h3 id="result0T"></h3> </a>
+                            <p id="result0D"></p>
+                        </div>
+                        <div class="searchItem">
+                            <a id="result1L">
+                                <h3 id="result1T"></h3> </a>
+                            <p id="result1D"></p>
+                        </div>
+                        <div class="searchItem">
+                            <a id="result2L">
+                                <h3 id="result2T"></h3> </a>
+                            <p id="result2D"></p>
+                        </div>
+                        <div class="searchItem">
+                            <a id="result3L">
+                                <h3 id="result3T"></h3> </a>
+                            <p id="result3D"></p>
+                        </div>
+                        <div class="searchItem">
+                            <a id="result4L">
+                                <h3 id="result4T"></h3> </a>
+                            <p id="result4D"></p>
+                        </div>
+                        <div class="searchItem">
+                            <a id="result5L">
+                                <h3 id="result5T"></h3> </a>
+                            <p id="result5D"></p>
+                        </div>
+                        <div class="searchItem">
+                            <a id="result6L">
+                                <h3 id="result6T"></h3> </a>
+                            <p id="result6D"></p>
+                        </div>
+                        <div class="searchItem">
+                            <a id="result7L">
+                                <h3 id="result7T"></h3> </a>
+                            <p id="result7D"></p>
+                        </div>
+                        <div class="searchItem">
+                            <a id="result8L">
+                                <h3 id="result8T"></h3> </a>
+                            <p id="result8D"></p>
+                        </div>
+                        <div class="searchItem">
+                            <a id="result9L">
+                                <h3 id="result9T"></h3> </a>
+                            <p id="result9D"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/js.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</body>
+
+</html>
