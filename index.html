@@ -2,6 +2,7 @@
 
 <head>
     <title>FCC - Wikipedia Viewer</title>
+    <meta name="description" content="A FCC project to gain practice working with a more complex API. This app allows you to search Wikipedia by utilizing their API.">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css"> </head>
 
@@ -9,23 +10,22 @@
     <div id="pageContainer" class="container">
         <div id="contentArea" class="showDisplay">
             <div class="row">
-                <div class="col-xs-10 col-xs-offset-1">
-                    <div id="header" class="content">
-                        <h1 id="title">Wikipedia Viewer</h1> </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-                    <div class="content">
-                        <form>
-                            <input id="searchBar" type="search" name="search" placeholder="Search Wikipedia..">
-                            <input type="button" value="Search" class="btn btn-default" onclick="searchWiki();">
-                            <input type="button" value="Random" class="btn btn-default" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random','_blank')"> </form>
+                <div id="header" class="col-xs-10 col-xs-offset-1">
+                    <h1 id="title">Wikipedia Viewer</h1>
+                    <div class="row">
+                        <form id="search" autocomplete="off" accept-charset="utf-8">
+                            <div class="col-xs-12">
+                                <input id="searchBar" type="search" name="search" placeholder="Search Wikipedia.."> </div>
+                            <div class="col-xs-5 col-xs-offset-1">
+                                <input type="submit" value="Submit" class="btn btn-default"> </div>
+                            <div class="col-xs-5">
+                                <input type="button" value="Random" class="btn btn-default" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random','_blank')"> </div>
+                        </form>
                     </div>
                 </div>
             </div>
             <div id="searchResults" class="row hideDisplay">
-                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1"> 
                     <div class="content">
                         <h3 id="yourSearch"></h3>
                         <div class="searchItem">
@@ -78,13 +78,17 @@
                                 <h3 id="result9T"></h3> </a>
                             <p id="result9D"></p>
                         </div>
-                    </div>
+                   </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="js/js.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/js.js"></script>
 </body>
 
 </html>
+<!-- Credits
+1) Font: https://fonts.google.com/specimen/Dosis
+2) Background image: https://www.pexels.com/photo/books-sculpture-write-reading-34627/
+-->
